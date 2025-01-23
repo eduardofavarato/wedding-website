@@ -252,7 +252,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background-image: linear-gradient(rgba(20,20,20,0.1), rgba(30,30,30,0.1)), url('../img/hero-min.jpg');
+  background-image: linear-gradient(rgba(20,20,20,0.7), rgba(30,30,30,0.4)), url('../img/hero-min.jpg');
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -294,7 +294,6 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgba(30, 30, 30, .50);
   z-index: 999;
   width: 100%;
 }
