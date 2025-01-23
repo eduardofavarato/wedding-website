@@ -260,11 +260,6 @@ Hero
   background-size: cover;
   position: relative;
 
-  /*.rsvp-btn {
-    position: absolute;
-    bottom: 100px;
-    left: 50%;
-  }*/
   .down-arrow a {
     color: $txt-light;
   }
@@ -658,9 +653,9 @@ Instagram
 }
 
 /* ==========================================================================
-Engagement Pics
+Photos
 ========================================================================== */
-#eng-pics {
+#photos {
   img {
     width: 100%;
     height: auto;
@@ -757,9 +752,10 @@ RSVP form
   padding-bottom: 140px;
   .rsvp-form {
     .rsvp-btn {
+      margin-top: 30px;
       padding: 15px 0;
       border-radius: 3px;
-      width: 100%;
+      width: 50%;
       font-size: 13px;
     }
     .form-input-group {
