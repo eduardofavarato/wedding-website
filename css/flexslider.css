@@ -262,3 +262,14 @@ html[xmlns] .flexslider .slides {
 /*    display: none;*/
 /*  }*/
 /*}*/
+
+/* This makes the navigation buttons permanently visible. */
+.flexslider .flex-direction-nav a,
+.flexslider .flex-direction-nav a { display: block; }
+.flex-direction-nav .flex-next { right: 0 !important; margin-right: 12px; opacity: 1 !important; }
+.flex-direction-nav .flex-prev { left: 0 !important; opacity: 1 !important; margin-left: 12px; }
+
+div.flexslider div.field-content {
+  padding-left:50px;
+  padding-right:50px;
+}
