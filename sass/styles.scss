@@ -59,6 +59,12 @@ section .header {
 .section-padding {
   padding: $section-padding;
 }
+.section-padding-bottom {
+  padding-bottom: $section-padding-bottom;
+}
+.section-padding-top {
+  padding-top: $section-padding-top;
+}
 .section-border {
   border-bottom: 1px solid $keyline-color;
 }
