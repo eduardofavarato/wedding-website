@@ -117,14 +117,9 @@ html[xmlns] .flexslider .slides {
   top: 50%;
   z-index: 10;
   overflow: hidden;
-  opacity: 0;
+  opacity: 1;
   cursor: pointer;
   color: rgba(255, 255, 255, 1);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 .flex-direction-nav a:before {
   font-family: "fontawesome";
@@ -137,10 +132,10 @@ html[xmlns] .flexslider .slides {
   content: '\f105';
 }
 .flex-direction-nav .flex-prev {
-  left: -50px;
+  left: 10px;
 }
 .flex-direction-nav .flex-next {
-  right: -50px;
+  right: 10px;
   text-align: right;
 }
 .flexslider:hover .flex-direction-nav .flex-prev {

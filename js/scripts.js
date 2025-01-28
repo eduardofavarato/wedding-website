@@ -49,8 +49,14 @@ $(document).ready(function () {
     });
 
     /***************** Initiate Flexslider ******************/
+    function getGridSize() {
+        return (window.innerWidth < 600) ? 1 : 2;
+    }
     $('.flexslider').flexslider({
-        animation: "slide"
+        animation: "slide",
+        itemWidth: 200,
+        minItems: getGridSize(),
+        maxItems: getGridSize(),
     });
 
     /***************** Initiate Fancybox ******************/

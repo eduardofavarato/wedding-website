@@ -567,6 +567,31 @@ Features-stack
   }
 }
 
+.dc-photos {
+  img {
+    justify-self: center;
+    height: 250px !important;
+    width: auto !important;
+  }
+}
+
+.flex-direction-nav a:before {
+  font-size: 25px;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* ==========================================================================
+.gifts
+========================================================================== */
+.gifts {
+  .pix-qr-code {
+    height: 150px !important;
+    width: auto !important;
+  }
+}
+
 /* ==========================================================================
 .blog
 ========================================================================== */
@@ -648,8 +673,14 @@ Instagram
 ========================================================================== */
 #instagram {
   margin-bottom: 30px;
+
   img {
     width: 100%;
+  }
+
+  p {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
