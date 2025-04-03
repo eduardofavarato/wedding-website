@@ -142,7 +142,7 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Só um segundo!</strong> Estamos confirmando sua presença.'));
 
-        if (MD5($('#invite_code').val()) !== 'd6ab9c3bee303814b49e3fa3ff6bc4e4') {
+        if (MD5($('#invite_code').val()) !== '82513e56b96276584dc90b120216199d') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Desculpe!</strong> O seu código de convite está incorreto.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbyU0-QwSwkcUXkUWQKjG1mjyPuIndj1QmbamOI8lfVEKn3LrlIUPpJoCG9IFthrLz694g/exec', data)
