@@ -592,15 +592,94 @@ Features-stack
 .gifts
 ========================================================================== */
 .gifts {
-  .pix-qr-code {
-    height: 150px !important;
+  .gift-photo-0 {
+    height: 250px !important;
     width: auto !important;
   }
 
-  .pix-instruction {
-    font-size: 12px;
-    font-style: italic;
-    margin-top: 10px;
+  #gifts-modal {
+    .gifts-modal-title {
+      padding-bottom: 20px;
+
+      .pix-instruction {
+        font-size: 12px;
+        font-style: italic;
+        margin-top: 10px;
+      }
+    }
+
+    .container {
+      width: auto !important;
+    }
+
+    .gift-wrapper {
+      background-color: whitesmoke;
+      padding: 2px;
+      width: auto;
+      margin-top: 10px;
+
+      .gift-photo {
+        img {
+          height: auto !important;
+          width: 100% !important;
+        }
+      }
+
+      .gift-description {
+        padding: 15px 10px 0 10px;
+        font-size: 13px;
+        font-stretch: condensed;
+        font-weight: 500;
+      }
+
+      .gift-price {
+        align-content: center;
+        color: black;
+        height: 50px;
+        margin: 20px;
+
+        .gift-price-sign {
+          font-size: 15px;
+          line-height: 30px;
+          vertical-align: top;
+        }
+
+        .gift-price-value {
+          font-size: 25px;
+          font-weight: 600;
+
+          .gift-price-cents {
+            font-size: 15px;
+            font-weight: normal;
+          }
+        }
+      }
+
+      .gift-btn {
+        margin: 25px 0;
+        padding: 10px 0;
+        border-radius: 3px;
+        width: 50%;
+        font-size: 13px;
+        position: absolute;
+        left: 25%;
+      }
+
+      .gift-pix {
+        visibility: hidden;
+
+        .pix-qr-code {
+          height: 100px !important;
+          width: auto !important;
+        }
+
+        .pix-instruction {
+          font-size: 12px;
+          font-style: italic;
+          margin-top: 10px;
+        }
+      }
+    }
   }
 }
 
