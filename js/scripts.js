@@ -174,6 +174,13 @@ $(document).ready(function () {
             });
         };
     }(jQuery));
+
+    $('.gift-btn').click(function () {
+        $('.gift-btn').visible();
+        $('.gift-pix').invisible();
+        $(this).invisible();
+        $(this).next('div').visible();
+    });
 });
 
 /********************** Extras **********************/
