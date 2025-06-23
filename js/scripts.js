@@ -210,7 +210,7 @@ $(document).ready(function () {
         $('#photos').show();
         $('#btn-switch-view-to-old').show();
 
-        $('.hero').css("background-image", "linear-gradient(rgba(150, 100, 100, 0.4), rgba(30, 30, 30, 0.4)),url('../img/hero.jpg')");
+        $('.hero').css("background-image", "linear-gradient(rgba(20, 20, 20, 0.4), rgba(30, 30, 30, 0.4)),url('../img/hero.jpg')");
         $('#down-arrow-link').attr('href', '#photos');
         $('html, body').animate({ scrollTop: 0 }, 'slow');
     });
