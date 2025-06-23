@@ -252,7 +252,9 @@ Navigation
   visibility: hidden;
   transition: all 300ms ease-in-out;
 }
-
+.old-nav {
+  display: none;
+}
 /* ==========================================================================
 Hero
 ========================================================================== */
@@ -366,6 +368,23 @@ header {
     right: 0;
     top: 26px;
     transition: all 300ms ease-in-out;
+  }
+  .btn-switch-view {
+    position: absolute;
+    right: 0;
+    top: 26px;
+    transition: all 300ms ease-in-out;
+
+    #btn-switch-view-to-old {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    #btn-switch-view-to-new {
+      display: none;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
 }
 .down-arrow {

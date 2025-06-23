@@ -53,3 +53,38 @@
 .btn-margin-right {
 	margin-right: 20px;
 }
+
+
+.btn-switch-view-old {
+  font-size: 13px;
+  font-weight: $bold;
+  border: solid 2px white;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  display: inline-block;
+  color: $black-color;
+  background: radial-gradient(
+                  circle closest-side at 86% 50%,
+                  $accent-color, $accent-color, $accent-color, $accent-color, $accent-color, $accent-color, $accent-color, $accent-color, $accent-color,
+                  white
+  )
+}
+
+
+.btn-switch-view-new {
+  font-size: 13px;
+  font-weight: $bold;
+  border: solid 2px white;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  display: inline-block;
+  color: $black-color;
+  background: radial-gradient(
+                  circle closest-side at 14% 50%,
+                  $accent-color, $accent-color, $accent-color, $accent-color, $accent-color, $accent-color, $accent-color, $accent-color, $accent-color,
+                  white
+  )
+}
+

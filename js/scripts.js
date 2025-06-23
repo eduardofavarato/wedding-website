@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
     /***************** Waypoints ******************/
-
     $('.wp1').waypoint(function () {
         $('.wp1').addClass('animated fadeInLeft');
     }, {
@@ -60,11 +59,9 @@ $(document).ready(function () {
     });
 
     /***************** Initiate Fancybox ******************/
-
     $('.single_image').fancybox({
         padding: 4
     });
-
     $('.fancybox').fancybox({
         padding: 4,
         width: 1000,
@@ -75,7 +72,6 @@ $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
 
     /***************** Nav Transformicon ******************/
-
     /* When user clicks the Icon */
     $('.nav-toggle').click(function () {
         $(this).toggleClass('active');
@@ -86,11 +82,9 @@ $(document).ready(function () {
     $('.header-nav li a').click(function () {
         $('.nav-toggle').toggleClass('active');
         $('.header-nav').toggleClass('open');
-
     });
 
     /***************** Header BG Scroll ******************/
-
     $(function () {
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
@@ -112,9 +106,7 @@ $(document).ready(function () {
     });
 
     /***************** Smooth Scrolling ******************/
-
     $(function () {
-
         $('a[href*=#]:not([href=#])').click(function () {
             if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 
@@ -128,7 +120,6 @@ $(document).ready(function () {
                 }
             }
         });
-
     });
 
     /********************** Embed youtube video *********************/
@@ -162,6 +153,7 @@ $(document).ready(function () {
         }
     });
 
+    /********************** Gifts **********************/
     (function($) {
         $.fn.invisible = function() {
             return this.each(function() {
@@ -174,12 +166,42 @@ $(document).ready(function () {
             });
         };
     }(jQuery));
-
     $('.gift-btn').click(function () {
         $('.gift-btn').visible();
         $('.gift-pix').invisible();
         $(this).invisible();
         $(this).next('div').visible();
+    });
+
+    /********************** Switch View **********************/
+    $('#btn-switch-view-to-old').click(function () {
+        $('.old-nav').show();
+        $('.quotes').show();
+        $('.events').show();
+        $('.gifts').show();
+        $('#instagram').show();
+        $('#event-place').show();
+        $('.map').show();
+        $('#btn-switch-view-to-new').show();
+
+        $('#new-nav').hide();
+        $('#photos').hide();
+        $('#btn-switch-view-to-old').hide();
+
+    });
+    $('#btn-switch-view-to-new').click(function () {
+        $('.old-nav').hide();
+        $('.quotes').hide();
+        $('.events').hide();
+        $('.gifts').hide();
+        $('#instagram').hide();
+        $('#event-place').hide();
+        $('.map').hide();
+        $('#btn-switch-view-to-new').hide();
+
+        $('#new-nav').show();
+        $('#photos').show();
+        $('#btn-switch-view-to-old').show();
     });
 });
 
