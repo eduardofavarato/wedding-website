@@ -53,6 +53,16 @@
 .btn-margin-right {
 	margin-right: 20px;
 }
+.btn-disabled {
+  color: #ccc;
+  border: solid 2px #ddd;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #eee;
+}
 
 
 .btn-switch-view-old {

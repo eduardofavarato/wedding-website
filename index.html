@@ -104,15 +104,8 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-4 hidden-xs"></div>
-            <div class="col-sm-4 hidden-xs text-center">
-                <a href="#photos" class="btn btn-accent btn-large rsvp-btn">Ver todas as fotos</a>
-            </div>
-            <div class="col-sm-4 hidden-xs"></div>
-        </div>
     </div>
-    <div class="down-arrow floating-arrow"><a href="#quotes"><i class="fa fa-angle-down"></i></a></div>
+    <div class="down-arrow floating-arrow"><a id="down-arrow-link" href="#photos"><i class="fa fa-angle-down"></i></a></div>
 </section>
 
 <section id="quotes" class="quotes section-padding">
@@ -175,19 +168,19 @@
                                 <div class="row">
                                     <div class="col-md-12 col-sm-12">
                                         <div class="form-input-group">
-                                            <i class="fa fa-user"></i><input name="name" class="" placeholder="Seu nome" required>
+                                            <i class="fa fa-user"></i><input disabled name="name" class="" placeholder="Seu nome" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-sm-12">
                                         <div class="form-input-group">
-                                            <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Código de convite" required>
+                                            <i class="fa fa-key"></i><input disabled type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Código de convite" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12" id="alert-wrapper"></div>
                                 </div>
-                                <button class="btn-fill rsvp-btn">Confirmar presença</button>
+                                <button disabled class="btn-disabled rsvp-btn">Confirmar presença</button>
                             </form>
                         </div>
                     </div>

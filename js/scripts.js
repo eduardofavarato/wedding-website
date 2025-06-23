@@ -129,6 +129,10 @@ $(document).ready(function () {
     /********************** RSVP **********************/
     $('#rsvp-form').on('submit', function (e) {
         e.preventDefault();
+        alert('Desculpe, você está atrasado! haha')
+
+        return;
+
         var data = $(this).serialize();
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Só um segundo!</strong> Estamos confirmando sua presença.'));
@@ -189,6 +193,8 @@ $(document).ready(function () {
         $('#btn-switch-view-to-old').hide();
 
         $('.hero').css("background-image", "linear-gradient(rgba(20,20,20,0.7), rgba(30,30,30,0.4)), url('../img/hero-old.jpg')");
+        $('#down-arrow-link').attr('href', '#quotes');
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
     });
     $('#btn-switch-view-to-new').click(function () {
         $('.old-nav').hide();
@@ -205,6 +211,8 @@ $(document).ready(function () {
         $('#btn-switch-view-to-old').show();
 
         $('.hero').css("background-image", "linear-gradient(rgba(150, 100, 100, 0.4), rgba(30, 30, 30, 0.4)),url('../img/hero.jpg')");
+        $('#down-arrow-link').attr('href', '#photos');
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
     });
 });
 
