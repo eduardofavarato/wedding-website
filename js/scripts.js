@@ -188,6 +188,7 @@ $(document).ready(function () {
         $('#photos').hide();
         $('#btn-switch-view-to-old').hide();
 
+        $('.hero').css("background-image", "linear-gradient(rgba(20,20,20,0.7), rgba(30,30,30,0.4)), url('../img/hero-old.jpg')");
     });
     $('#btn-switch-view-to-new').click(function () {
         $('.old-nav').hide();
@@ -202,6 +203,8 @@ $(document).ready(function () {
         $('#new-nav').show();
         $('#photos').show();
         $('#btn-switch-view-to-old').show();
+
+        $('.hero').css("background-image", "linear-gradient(rgba(150, 100, 100, 0.4), rgba(30, 30, 30, 0.4)),url('../img/hero.jpg')");
     });
 });
 
